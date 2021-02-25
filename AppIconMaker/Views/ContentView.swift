@@ -7,6 +7,7 @@ struct ContentView: View, DropDelegate {
     var body: some View {
         HStack {
             VStack {
+                Text("Icon files name")
                 TextField("Enter icon files name", text: $iconFileName)
                     .frame(width: AppConsts.IMAGE_PREVIEW_SIDE)
                     .padding(.leading, AppConsts.IMAGE_PREVIEW_SIDE * 0.01)
