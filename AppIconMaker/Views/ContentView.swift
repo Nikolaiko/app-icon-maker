@@ -1,7 +1,9 @@
 import SwiftUI
 
 struct ContentView: View, DropDelegate {
-    @State private var url: URL?
+    @EnvironmentObject var viewModel: MainViewModel
+    
+    
     @State private var iconFileName: String = ""
 
     var body: some View {
@@ -11,11 +13,11 @@ struct ContentView: View, DropDelegate {
                 TextField("Enter icon files name", text: $iconFileName)
                     .frame(width: AppConsts.IMAGE_PREVIEW_SIDE)
                     .padding(.leading, AppConsts.IMAGE_PREVIEW_SIDE * 0.01)
-                    .disabled(url == nil)
+                    .disabled(viewModel.url == nil)
                 Button(action: saveResizedCopy, label: {
                     Text("Create icons")
                 })
-                .disabled(url == nil)
+                .disabled(viewModel.url == nil)
                 Button(action: selectImageForPhoto, label: {
                     Text("Select file for icon")
                 })
@@ -51,13 +53,13 @@ struct ContentView: View, DropDelegate {
     }
     
     private func saveResizedCopy() {
-        ImageResizer().resizeImageToIcons(sourceUrl: url!, sourceFileName: iconFileName)
+        ImageResizer().resizeImageToIcons(sourceUrl: viewModel.url!, sourceFileName: iconFileName)
     }
 
     private func updateSelectedUrl(newUrl: URL) {
-        url = newUrl
+        viewModel.url = newUrl
         guard
-            let filename = url?.pathComponents.last,
+            let filename = viewModel.url?.pathComponents.last,
             let namePart = filename.split(separator: ".").first
         else { return }
         
@@ -65,8 +67,8 @@ struct ContentView: View, DropDelegate {
     }
     
     @ViewBuilder private func buildImagePreview() -> some View {
-        if url != nil {
-            Image(nsImage: NSImage(contentsOf: url!)!)
+        if viewModel.url != nil {
+            Image(nsImage: NSImage(contentsOf: viewModel.url!)!)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: AppConsts.IMAGE_PREVIEW_SIDE, height: AppConsts.IMAGE_PREVIEW_SIDE)

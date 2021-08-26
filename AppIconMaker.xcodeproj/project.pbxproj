@@ -10,6 +10,13 @@
 		7942BA0725E65C47000D9390 /* AppConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942BA0625E65C47000D9390 /* AppConsts.swift */; };
 		7942BA1025E675D8000D9390 /* NSImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942BA0F25E675D8000D9390 /* NSImage+Resize.swift */; };
 		7942BA1525E690E2000D9390 /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942BA1425E690E2000D9390 /* ImageResizer.swift */; };
+		79B4CCF626D5F1B500D85B48 /* AppIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4CCF526D5F1B500D85B48 /* AppIcons.swift */; };
+		79B4CCF826D5F1E400D85B48 /* IconImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4CCF726D5F1E400D85B48 /* IconImage.swift */; };
+		79B4CCFA26D5F22C00D85B48 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4CCF926D5F22C00D85B48 /* Enums.swift */; };
+		79B4CCFC26D5F26600D85B48 /* IconInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4CCFB26D5F26600D85B48 /* IconInfo.swift */; };
+		79B4CCFE26D5F38400D85B48 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4CCFD26D5F38400D85B48 /* UserDataService.swift */; };
+		79E9C11E26D7345A0081984F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9C11D26D7345A0081984F /* MainViewModel.swift */; };
+		79E9C12126D7418A0081984F /* DIResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9C12026D7418A0081984F /* DIResolver.swift */; };
 		79F4447E25E6100200BA6CE4 /* AppIconMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4447D25E6100200BA6CE4 /* AppIconMakerApp.swift */; };
 		79F4448025E6100200BA6CE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4447F25E6100200BA6CE4 /* ContentView.swift */; };
 		79F4448225E6100200BA6CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F4448125E6100200BA6CE4 /* Assets.xcassets */; };
@@ -20,6 +27,13 @@
 		7942BA0625E65C47000D9390 /* AppConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConsts.swift; sourceTree = "<group>"; };
 		7942BA0F25E675D8000D9390 /* NSImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Resize.swift"; sourceTree = "<group>"; };
 		7942BA1425E690E2000D9390 /* ImageResizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
+		79B4CCF526D5F1B500D85B48 /* AppIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcons.swift; sourceTree = "<group>"; };
+		79B4CCF726D5F1E400D85B48 /* IconImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImage.swift; sourceTree = "<group>"; };
+		79B4CCF926D5F22C00D85B48 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		79B4CCFB26D5F26600D85B48 /* IconInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconInfo.swift; sourceTree = "<group>"; };
+		79B4CCFD26D5F38400D85B48 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		79E9C11D26D7345A0081984F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		79E9C12026D7418A0081984F /* DIResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIResolver.swift; sourceTree = "<group>"; };
 		79F4447A25E6100200BA6CE4 /* App Icon Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Icon Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F4447D25E6100200BA6CE4 /* AppIconMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconMakerApp.swift; sourceTree = "<group>"; };
 		79F4447F25E6100200BA6CE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,8 +74,36 @@
 			isa = PBXGroup;
 			children = (
 				7942BA1425E690E2000D9390 /* ImageResizer.swift */,
+				79B4CCFD26D5F38400D85B48 /* UserDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		79B4CCF426D5F19A00D85B48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79B4CCF526D5F1B500D85B48 /* AppIcons.swift */,
+				79B4CCF726D5F1E400D85B48 /* IconImage.swift */,
+				79B4CCF926D5F22C00D85B48 /* Enums.swift */,
+				79B4CCFB26D5F26600D85B48 /* IconInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79E9C11C26D734430081984F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79E9C11D26D7345A0081984F /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		79E9C11F26D7417C0081984F /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				79E9C12026D7418A0081984F /* DIResolver.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		79F4447125E6100200BA6CE4 = {
@@ -83,6 +125,9 @@
 		79F4447C25E6100200BA6CE4 /* AppIconMaker */ = {
 			isa = PBXGroup;
 			children = (
+				79E9C11F26D7417C0081984F /* DI */,
+				79E9C11C26D734430081984F /* ViewModel */,
+				79B4CCF426D5F19A00D85B48 /* Model */,
 				7942BA1325E690CD000D9390 /* Services */,
 				7942BA0E25E675BF000D9390 /* Extensions */,
 				7942BA0925E65F9B000D9390 /* Views */,
@@ -196,9 +241,16 @@
 			files = (
 				7942BA1025E675D8000D9390 /* NSImage+Resize.swift in Sources */,
 				79F4448025E6100200BA6CE4 /* ContentView.swift in Sources */,
+				79E9C12126D7418A0081984F /* DIResolver.swift in Sources */,
 				79F4447E25E6100200BA6CE4 /* AppIconMakerApp.swift in Sources */,
 				7942BA1525E690E2000D9390 /* ImageResizer.swift in Sources */,
+				79B4CCFC26D5F26600D85B48 /* IconInfo.swift in Sources */,
+				79B4CCF626D5F1B500D85B48 /* AppIcons.swift in Sources */,
+				79B4CCFE26D5F38400D85B48 /* UserDataService.swift in Sources */,
+				79B4CCF826D5F1E400D85B48 /* IconImage.swift in Sources */,
+				79B4CCFA26D5F22C00D85B48 /* Enums.swift in Sources */,
 				7942BA0725E65C47000D9390 /* AppConsts.swift in Sources */,
+				79E9C11E26D7345A0081984F /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +380,7 @@
 				CODE_SIGN_ENTITLEMENTS = AppIconMaker/AppIconMaker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"AppIconMaker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWXN4J2VCP;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -339,6 +391,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolai.iconmaker;
 				PRODUCT_NAME = "App Icon Maker";
 				SWIFT_VERSION = 5.0;
@@ -353,7 +406,7 @@
 				CODE_SIGN_ENTITLEMENTS = AppIconMaker/AppIconMaker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"AppIconMaker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWXN4J2VCP;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -364,6 +417,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolai.iconmaker;
 				PRODUCT_NAME = "App Icon Maker";
 				SWIFT_VERSION = 5.0;
