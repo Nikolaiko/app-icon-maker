@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,13 @@
 		79F4448025E6100200BA6CE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4447F25E6100200BA6CE4 /* ContentView.swift */; };
 		79F4448225E6100200BA6CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F4448125E6100200BA6CE4 /* Assets.xcassets */; };
 		79F4448525E6100200BA6CE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F4448425E6100200BA6CE4 /* Preview Assets.xcassets */; };
+		9170346826D935AB00850555 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 9170346726D935AB00850555 /* Resolver */; };
+		9170346A26D93C7B00850555 /* UserDefaultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170346926D93C7B00850555 /* UserDefaultsRepository.swift */; };
+		9170346E26D9E43A00850555 /* ImageNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170346D26D9E43900850555 /* ImageNameView.swift */; };
+		9170347126D9E58B00850555 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170347026D9E58B00850555 /* TitleText.swift */; };
+		9170347326DA18A100850555 /* ImagePathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170347226DA18A100850555 /* ImagePathView.swift */; };
+		9170347826DA1A9F00850555 /* ClosureTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170347726DA1A9F00850555 /* ClosureTypes.swift */; };
+		9170347A26DA1AD000850555 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170347926DA1AD000850555 /* BlueButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +48,12 @@
 		79F4448425E6100200BA6CE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79F4448625E6100200BA6CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79F4448725E6100200BA6CE4 /* AppIconMaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIconMaker.entitlements; sourceTree = "<group>"; };
+		9170346926D93C7B00850555 /* UserDefaultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRepository.swift; sourceTree = "<group>"; };
+		9170346D26D9E43900850555 /* ImageNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNameView.swift; sourceTree = "<group>"; };
+		9170347026D9E58B00850555 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
+		9170347226DA18A100850555 /* ImagePathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePathView.swift; sourceTree = "<group>"; };
+		9170347726DA1A9F00850555 /* ClosureTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureTypes.swift; sourceTree = "<group>"; };
+		9170347926DA1AD000850555 /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9170346826D935AB00850555 /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +71,8 @@
 		7942BA0925E65F9B000D9390 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9170346F26D9E57A00850555 /* CommonViews */,
+				9170346C26D9E41200850555 /* SubViews */,
 				79F4447F25E6100200BA6CE4 /* ContentView.swift */,
 			);
 			path = Views;
@@ -73,8 +89,8 @@
 		7942BA1325E690CD000D9390 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				7942BA1425E690E2000D9390 /* ImageResizer.swift */,
-				79B4CCFD26D5F38400D85B48 /* UserDataService.swift */,
+				9170347626DA1A7800850555 /* ImageProcessing */,
+				9170347526DA1A5E00850555 /* Repositories */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -82,10 +98,12 @@
 		79B4CCF426D5F19A00D85B48 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7942BA0625E65C47000D9390 /* AppConsts.swift */,
 				79B4CCF526D5F1B500D85B48 /* AppIcons.swift */,
 				79B4CCF726D5F1E400D85B48 /* IconImage.swift */,
 				79B4CCF926D5F22C00D85B48 /* Enums.swift */,
 				79B4CCFB26D5F26600D85B48 /* IconInfo.swift */,
+				9170347726DA1A9F00850555 /* ClosureTypes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,18 +143,16 @@
 		79F4447C25E6100200BA6CE4 /* AppIconMaker */ = {
 			isa = PBXGroup;
 			children = (
+				9170346B26D9BEBF00850555 /* MainScreen */,
 				79E9C11F26D7417C0081984F /* DI */,
-				79E9C11C26D734430081984F /* ViewModel */,
 				79B4CCF426D5F19A00D85B48 /* Model */,
 				7942BA1325E690CD000D9390 /* Services */,
 				7942BA0E25E675BF000D9390 /* Extensions */,
-				7942BA0925E65F9B000D9390 /* Views */,
 				79F4447D25E6100200BA6CE4 /* AppIconMakerApp.swift */,
 				79F4448125E6100200BA6CE4 /* Assets.xcassets */,
 				79F4448625E6100200BA6CE4 /* Info.plist */,
 				79F4448725E6100200BA6CE4 /* AppIconMaker.entitlements */,
 				79F4448325E6100200BA6CE4 /* Preview Content */,
-				7942BA0625E65C47000D9390 /* AppConsts.swift */,
 			);
 			path = AppIconMaker;
 			sourceTree = "<group>";
@@ -147,6 +163,58 @@
 				79F4448425E6100200BA6CE4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9170346B26D9BEBF00850555 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				79E9C11C26D734430081984F /* ViewModel */,
+				7942BA0925E65F9B000D9390 /* Views */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		9170346C26D9E41200850555 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				9170346D26D9E43900850555 /* ImageNameView.swift */,
+				9170347226DA18A100850555 /* ImagePathView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		9170346F26D9E57A00850555 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				9170347026D9E58B00850555 /* TitleText.swift */,
+				9170347926DA1AD000850555 /* BlueButton.swift */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		9170347426DA1A5200850555 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				79B4CCFD26D5F38400D85B48 /* UserDataService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9170347526DA1A5E00850555 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9170347426DA1A5200850555 /* Protocols */,
+				9170346926D93C7B00850555 /* UserDefaultsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9170347626DA1A7800850555 /* ImageProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				7942BA1425E690E2000D9390 /* ImageResizer.swift */,
+			);
+			path = ImageProcessing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +234,9 @@
 			dependencies = (
 			);
 			name = AppIconMaker;
+			packageProductDependencies = (
+				9170346726D935AB00850555 /* Resolver */,
+			);
 			productName = AppIconMaker;
 			productReference = 79F4447A25E6100200BA6CE4 /* App Icon Maker.app */;
 			productType = "com.apple.product-type.application";
@@ -177,7 +248,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					79F4447925E6100200BA6CE4 = {
 						CreatedOnToolsVersion = 12.4;
@@ -193,6 +264,9 @@
 				Base,
 			);
 			mainGroup = 79F4447125E6100200BA6CE4;
+			packageReferences = (
+				9170346626D935AB00850555 /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = 79F4447B25E6100200BA6CE4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -239,18 +313,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9170346A26D93C7B00850555 /* UserDefaultsRepository.swift in Sources */,
+				9170346E26D9E43A00850555 /* ImageNameView.swift in Sources */,
 				7942BA1025E675D8000D9390 /* NSImage+Resize.swift in Sources */,
+				9170347826DA1A9F00850555 /* ClosureTypes.swift in Sources */,
 				79F4448025E6100200BA6CE4 /* ContentView.swift in Sources */,
+				9170347126D9E58B00850555 /* TitleText.swift in Sources */,
 				79E9C12126D7418A0081984F /* DIResolver.swift in Sources */,
 				79F4447E25E6100200BA6CE4 /* AppIconMakerApp.swift in Sources */,
 				7942BA1525E690E2000D9390 /* ImageResizer.swift in Sources */,
 				79B4CCFC26D5F26600D85B48 /* IconInfo.swift in Sources */,
+				9170347326DA18A100850555 /* ImagePathView.swift in Sources */,
 				79B4CCF626D5F1B500D85B48 /* AppIcons.swift in Sources */,
 				79B4CCFE26D5F38400D85B48 /* UserDataService.swift in Sources */,
 				79B4CCF826D5F1E400D85B48 /* IconImage.swift in Sources */,
 				79B4CCFA26D5F22C00D85B48 /* Enums.swift in Sources */,
 				7942BA0725E65C47000D9390 /* AppConsts.swift in Sources */,
 				79E9C11E26D7345A0081984F /* MainViewModel.swift in Sources */,
+				9170347A26DA1AD000850555 /* BlueButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AppIconMaker/AppIconMaker.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
@@ -404,6 +485,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AppIconMaker/AppIconMaker.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
@@ -446,6 +528,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9170346626D935AB00850555 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9170346726D935AB00850555 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9170346626D935AB00850555 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 79F4447225E6100200BA6CE4 /* Project object */;
 }

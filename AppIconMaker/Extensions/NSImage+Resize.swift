@@ -1,7 +1,7 @@
 import SwiftUI
 
 extension NSImage {
-    func resizedCopy( w: CGFloat, h: CGFloat) -> NSImage {
+    func resizedCopy(w: CGFloat, h: CGFloat) -> NSImage {
         let destSize = NSSize(width: w, height: h)
         let newImage = NSImage(size: destSize)
             
