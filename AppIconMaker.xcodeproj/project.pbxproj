@@ -14,7 +14,6 @@
 		79B4CCF826D5F1E400D85B48 /* IconImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4CCF726D5F1E400D85B48 /* IconImage.swift */; };
 		79B4CCFA26D5F22C00D85B48 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4CCF926D5F22C00D85B48 /* Enums.swift */; };
 		79B4CCFC26D5F26600D85B48 /* IconInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4CCFB26D5F26600D85B48 /* IconInfo.swift */; };
-		79B4CCFE26D5F38400D85B48 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B4CCFD26D5F38400D85B48 /* UserDataService.swift */; };
 		79E9C11E26D7345A0081984F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9C11D26D7345A0081984F /* MainViewModel.swift */; };
 		79E9C12126D7418A0081984F /* DIResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E9C12026D7418A0081984F /* DIResolver.swift */; };
 		79F4447E25E6100200BA6CE4 /* AppIconMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4447D25E6100200BA6CE4 /* AppIconMakerApp.swift */; };
@@ -22,12 +21,13 @@
 		79F4448225E6100200BA6CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F4448125E6100200BA6CE4 /* Assets.xcassets */; };
 		79F4448525E6100200BA6CE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F4448425E6100200BA6CE4 /* Preview Assets.xcassets */; };
 		9170346826D935AB00850555 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 9170346726D935AB00850555 /* Resolver */; };
-		9170346A26D93C7B00850555 /* UserDefaultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170346926D93C7B00850555 /* UserDefaultsRepository.swift */; };
 		9170346E26D9E43A00850555 /* ImageNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170346D26D9E43900850555 /* ImageNameView.swift */; };
 		9170347126D9E58B00850555 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170347026D9E58B00850555 /* TitleText.swift */; };
 		9170347326DA18A100850555 /* ImagePathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170347226DA18A100850555 /* ImagePathView.swift */; };
 		9170347826DA1A9F00850555 /* ClosureTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170347726DA1A9F00850555 /* ClosureTypes.swift */; };
 		9170347A26DA1AD000850555 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170347926DA1AD000850555 /* BlueButton.swift */; };
+		91869BCE26F23FD200F87431 /* XCAssetsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91869BCD26F23FD200F87431 /* XCAssetsParser.swift */; };
+		91990ED826EF2395009FCE01 /* ProjectResourcePathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91990ED726EF2395009FCE01 /* ProjectResourcePathView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,6 @@
 		79B4CCF726D5F1E400D85B48 /* IconImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImage.swift; sourceTree = "<group>"; };
 		79B4CCF926D5F22C00D85B48 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		79B4CCFB26D5F26600D85B48 /* IconInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconInfo.swift; sourceTree = "<group>"; };
-		79B4CCFD26D5F38400D85B48 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		79E9C11D26D7345A0081984F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		79E9C12026D7418A0081984F /* DIResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIResolver.swift; sourceTree = "<group>"; };
 		79F4447A25E6100200BA6CE4 /* App Icon Maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Icon Maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,12 +47,13 @@
 		79F4448425E6100200BA6CE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79F4448625E6100200BA6CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79F4448725E6100200BA6CE4 /* AppIconMaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIconMaker.entitlements; sourceTree = "<group>"; };
-		9170346926D93C7B00850555 /* UserDefaultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRepository.swift; sourceTree = "<group>"; };
 		9170346D26D9E43900850555 /* ImageNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNameView.swift; sourceTree = "<group>"; };
 		9170347026D9E58B00850555 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
 		9170347226DA18A100850555 /* ImagePathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePathView.swift; sourceTree = "<group>"; };
 		9170347726DA1A9F00850555 /* ClosureTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureTypes.swift; sourceTree = "<group>"; };
 		9170347926DA1AD000850555 /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		91869BCD26F23FD200F87431 /* XCAssetsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAssetsParser.swift; sourceTree = "<group>"; };
+		91990ED726EF2395009FCE01 /* ProjectResourcePathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectResourcePathView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +89,8 @@
 		7942BA1325E690CD000D9390 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				91869BCC26F23F6800F87431 /* Parsing */,
 				9170347626DA1A7800850555 /* ImageProcessing */,
-				9170347526DA1A5E00850555 /* Repositories */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -179,6 +179,7 @@
 			children = (
 				9170346D26D9E43900850555 /* ImageNameView.swift */,
 				9170347226DA18A100850555 /* ImagePathView.swift */,
+				91990ED726EF2395009FCE01 /* ProjectResourcePathView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -192,29 +193,20 @@
 			path = CommonViews;
 			sourceTree = "<group>";
 		};
-		9170347426DA1A5200850555 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				79B4CCFD26D5F38400D85B48 /* UserDataService.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		9170347526DA1A5E00850555 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				9170347426DA1A5200850555 /* Protocols */,
-				9170346926D93C7B00850555 /* UserDefaultsRepository.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
 		9170347626DA1A7800850555 /* ImageProcessing */ = {
 			isa = PBXGroup;
 			children = (
 				7942BA1425E690E2000D9390 /* ImageResizer.swift */,
 			);
 			path = ImageProcessing;
+			sourceTree = "<group>";
+		};
+		91869BCC26F23F6800F87431 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				91869BCD26F23FD200F87431 /* XCAssetsParser.swift */,
+			);
+			path = Parsing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,19 +305,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9170346A26D93C7B00850555 /* UserDefaultsRepository.swift in Sources */,
 				9170346E26D9E43A00850555 /* ImageNameView.swift in Sources */,
 				7942BA1025E675D8000D9390 /* NSImage+Resize.swift in Sources */,
+				91869BCE26F23FD200F87431 /* XCAssetsParser.swift in Sources */,
 				9170347826DA1A9F00850555 /* ClosureTypes.swift in Sources */,
 				79F4448025E6100200BA6CE4 /* ContentView.swift in Sources */,
 				9170347126D9E58B00850555 /* TitleText.swift in Sources */,
+				91990ED826EF2395009FCE01 /* ProjectResourcePathView.swift in Sources */,
 				79E9C12126D7418A0081984F /* DIResolver.swift in Sources */,
 				79F4447E25E6100200BA6CE4 /* AppIconMakerApp.swift in Sources */,
 				7942BA1525E690E2000D9390 /* ImageResizer.swift in Sources */,
 				79B4CCFC26D5F26600D85B48 /* IconInfo.swift in Sources */,
 				9170347326DA18A100850555 /* ImagePathView.swift in Sources */,
 				79B4CCF626D5F1B500D85B48 /* AppIcons.swift in Sources */,
-				79B4CCFE26D5F38400D85B48 /* UserDataService.swift in Sources */,
 				79B4CCF826D5F1E400D85B48 /* IconImage.swift in Sources */,
 				79B4CCFA26D5F22C00D85B48 /* Enums.swift in Sources */,
 				7942BA0725E65C47000D9390 /* AppConsts.swift in Sources */,

@@ -58,6 +58,21 @@ struct ContentView: View, DropDelegate {
         }
     }
     
+    private func selectProjectImageSetFile() {
+        let dialog = NSOpenPanel();
+        dialog.title = "Select Assets.xcassets folder";
+        dialog.showsResizeIndicator = true;
+        dialog.showsHiddenFiles = false;
+        dialog.canChooseFiles = false;
+        dialog.canChooseDirectories = true;
+        
+        if (dialog.runModal() ==  NSApplication.ModalResponse.OK) {
+            DispatchQueue.main.async {
+                viewModel.updateProjectDestinationURL(newUrl: dialog.url!)
+            }
+        }
+    }
+    
     private func buildViewWithImage() -> some View {
         HStack {
             VStack {
@@ -84,6 +99,22 @@ struct ContentView: View, DropDelegate {
                             if viewModel.destinationPath != "" {
                                 BlueButton(buttonTitle: "Create",
                                            callback: viewModel.generateIcons
+                                )
+                            }
+                        }
+                    }
+                )
+                GroupBox(
+                    label: TitleText(text: "Add to existing project"),
+                    content: {
+                        VStack {
+                            ProjectResourcePathView(
+                                path: $viewModel.projectDestinationPath,
+                                selectCallback: selectProjectImageSetFile
+                            )
+                            if viewModel.projectDestinationPath != "" {
+                                BlueButton(buttonTitle: "Add to project",
+                                           callback: viewModel.importIconsToProject
                                 )
                             }
                         }

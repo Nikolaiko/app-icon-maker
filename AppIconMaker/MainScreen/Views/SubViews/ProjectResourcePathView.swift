@@ -1,22 +1,21 @@
 import SwiftUI
 
-struct ImagePathView: View {
-    
+struct ProjectResourcePathView: View {
     @Binding var path: String
     let selectCallback: VoidCallback
     
     var body: some View {
         HStack {
-            TitleText(text: "Destination path:")
-            TextField("Select destination path", text: $path)
+            TitleText(text: ".xcasset file path:")
+            TextField("Select xcasset file path", text: $path)
                 .disabled(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
             BlueButton(buttonTitle: "Select", callback: selectCallback)
         }
     }
 }
 
-struct ImagePathView_Previews: PreviewProvider {
+struct ProjectResourcePathView_Previews: PreviewProvider {
     static var previews: some View {
-        ImagePathView(path: .constant("SomePath"), selectCallback: {})
+        ProjectResourcePathView(path: .constant("Some"), selectCallback: {})
     }
 }

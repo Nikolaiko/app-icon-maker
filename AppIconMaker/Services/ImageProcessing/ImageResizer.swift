@@ -1,6 +1,6 @@
 import SwiftUI
 
-final class ImageResizer {
+struct ImageResizer {
     func resizeImageToIcons(
         sourceUrl: URL,
         sourceFileName: String,
@@ -31,6 +31,13 @@ final class ImageResizer {
                 "\(sourceFileName)-\(currentDimension).jpeg"
             )
             resized.writeJPEG(toURL: fileName)
+        }
+    }
+    
+    func createIconsForProject(iconsData: AppIcons, destination: URL) {
+        guard let imagesData = iconsData.images else { return }
+        for currentIcon in imagesData {
+            
         }
     }
 }
