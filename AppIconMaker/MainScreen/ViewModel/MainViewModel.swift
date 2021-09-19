@@ -27,7 +27,15 @@ class MainViewModel: ObservableObject {
     
     func updateProjectDestinationURL(newUrl: URL) {
         projectDestinationUrl = newUrl
-        projectDestinationPath = projectDestinationUrl?.path ?? ""
+        
+        var components = projectDestinationUrl?.pathComponents ?? []
+        if components.count >= 2 {
+            components = Array(components.dropFirst(components.count - 2))
+            projectDestinationPath = "\(components.first ?? "")/\(components.last ?? "")"
+        } else {
+            projectDestinationPath = "\(components.first ?? "")"
+        }
+        
     }
     
     func updateDestinationUrl(newUrl: URL) {
@@ -50,8 +58,28 @@ class MainViewModel: ObservableObject {
         let jsonFilePath = subPath
             .appendingPathComponent("Contents.json")
         
-        if let iconsData = parser.parse(destination: jsonFilePath) {
-            imageResizer.createIconsForProject(iconsData: iconsData, destination: subPath)
+        if var iconsData = parser.parse(destination: jsonFilePath) {
+            let resizeResults = imageResizer.createIconsForProject(
+                source: imageFileUrl!,
+                destination: subPath,
+                imagesData: iconsData.images ?? []
+            )
+            iconsData.images = resizeResults
+            
+            var initialData: Data? = nil
+            do {
+                let jsonEncoder = JSONEncoder()
+                let jsonData = try jsonEncoder.encode(iconsData)
+                
+                if FileManager.default.fileExists(atPath: jsonFilePath.path) {
+                    initialData = try Data(contentsOf: jsonFilePath)
+                }
+                try jsonData.write(to: jsonFilePath)
+            } catch {
+                if initialData != nil {
+                    try? initialData?.write(to: jsonFilePath)
+                }
+            }
         }
     }
 }

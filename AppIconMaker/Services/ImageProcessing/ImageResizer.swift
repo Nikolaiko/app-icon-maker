@@ -34,10 +34,36 @@ struct ImageResizer {
         }
     }
     
-    func createIconsForProject(iconsData: AppIcons, destination: URL) {
-        guard let imagesData = iconsData.images else { return }
-        for currentIcon in imagesData {
-            
+    func createIconsForProject(
+        source: URL,
+        destination: URL,
+        imagesData: [IconImage]
+    ) -> [IconImage] {
+        var addedFileUrls: [URL] = []
+        var addedFileNames: [String] = []
+        var imagesDataCopy = imagesData
+                
+        for i in imagesData.indices {
+            let currentSize = imagesData[i].toCGSize()
+            let sourceImage = NSImage(contentsOf: source)!
+            let resizedCopy = sourceImage.resizedCopy(
+                w: currentSize.width,
+                h: currentSize.height
+            )
+            let fileName = "IconImage-\(currentSize.width).jpeg"
+            let destFileUrl = destination.appendingPathComponent(fileName)
+            if FileManager.default.fileExists(atPath: destFileUrl.path) {
+                do {
+                    try FileManager.default.removeItem(at: destFileUrl)
+                } catch {
+                    print("Error during removing file \(error)")
+                }
+            }
+            resizedCopy.writeJPEG(toURL: destFileUrl)
+            addedFileUrls.append(destFileUrl)
+            addedFileNames.append(fileName)
+            imagesDataCopy[i].filename = fileName
         }
+        return imagesDataCopy
     }
 }

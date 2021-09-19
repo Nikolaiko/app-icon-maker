@@ -1,6 +1,6 @@
 import Foundation
 
 struct AppIcons: Codable {
-    let images: [IconImage]?
+    var images: [IconImage]?
     let info: IconInfo?
 }

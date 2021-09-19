@@ -1,8 +1,9 @@
 import SwiftUI
 
 extension NSImage {
-    func resizedCopy(w: CGFloat, h: CGFloat) -> NSImage {
-        let destSize = NSSize(width: w, height: h)
+    func resizedCopy(w: CGFloat, h: CGFloat) -> NSImage {        
+        let factor = NSScreen.main?.backingScaleFactor ?? 1.0
+        let destSize = NSSize(width: w / factor, height: h / factor)
         let newImage = NSImage(size: destSize)
             
         newImage.lockFocus()

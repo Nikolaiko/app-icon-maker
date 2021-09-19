@@ -20,6 +20,7 @@
 		79F4448025E6100200BA6CE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4447F25E6100200BA6CE4 /* ContentView.swift */; };
 		79F4448225E6100200BA6CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F4448125E6100200BA6CE4 /* Assets.xcassets */; };
 		79F4448525E6100200BA6CE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F4448425E6100200BA6CE4 /* Preview Assets.xcassets */; };
+		916A1B0B26F4EC68005752B8 /* ResizerChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916A1B0A26F4EC68005752B8 /* ResizerChanges.swift */; };
 		9170346826D935AB00850555 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 9170346726D935AB00850555 /* Resolver */; };
 		9170346E26D9E43A00850555 /* ImageNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170346D26D9E43900850555 /* ImageNameView.swift */; };
 		9170347126D9E58B00850555 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9170347026D9E58B00850555 /* TitleText.swift */; };
@@ -47,6 +48,7 @@
 		79F4448425E6100200BA6CE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79F4448625E6100200BA6CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79F4448725E6100200BA6CE4 /* AppIconMaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIconMaker.entitlements; sourceTree = "<group>"; };
+		916A1B0A26F4EC68005752B8 /* ResizerChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizerChanges.swift; sourceTree = "<group>"; };
 		9170346D26D9E43900850555 /* ImageNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNameView.swift; sourceTree = "<group>"; };
 		9170347026D9E58B00850555 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
 		9170347226DA18A100850555 /* ImagePathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePathView.swift; sourceTree = "<group>"; };
@@ -98,11 +100,9 @@
 		79B4CCF426D5F19A00D85B48 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				916A1B0926F4EC3E005752B8 /* ServiceData */,
+				916A1B0826F4EC25005752B8 /* JSONData */,
 				7942BA0625E65C47000D9390 /* AppConsts.swift */,
-				79B4CCF526D5F1B500D85B48 /* AppIcons.swift */,
-				79B4CCF726D5F1E400D85B48 /* IconImage.swift */,
-				79B4CCF926D5F22C00D85B48 /* Enums.swift */,
-				79B4CCFB26D5F26600D85B48 /* IconInfo.swift */,
 				9170347726DA1A9F00850555 /* ClosureTypes.swift */,
 			);
 			path = Model;
@@ -163,6 +163,25 @@
 				79F4448425E6100200BA6CE4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		916A1B0826F4EC25005752B8 /* JSONData */ = {
+			isa = PBXGroup;
+			children = (
+				79B4CCF526D5F1B500D85B48 /* AppIcons.swift */,
+				79B4CCF726D5F1E400D85B48 /* IconImage.swift */,
+				79B4CCF926D5F22C00D85B48 /* Enums.swift */,
+				79B4CCFB26D5F26600D85B48 /* IconInfo.swift */,
+			);
+			path = JSONData;
+			sourceTree = "<group>";
+		};
+		916A1B0926F4EC3E005752B8 /* ServiceData */ = {
+			isa = PBXGroup;
+			children = (
+				916A1B0A26F4EC68005752B8 /* ResizerChanges.swift */,
+			);
+			path = ServiceData;
 			sourceTree = "<group>";
 		};
 		9170346B26D9BEBF00850555 /* MainScreen */ = {
@@ -316,6 +335,7 @@
 				79F4447E25E6100200BA6CE4 /* AppIconMakerApp.swift in Sources */,
 				7942BA1525E690E2000D9390 /* ImageResizer.swift in Sources */,
 				79B4CCFC26D5F26600D85B48 /* IconInfo.swift in Sources */,
+				916A1B0B26F4EC68005752B8 /* ResizerChanges.swift in Sources */,
 				9170347326DA18A100850555 /* ImagePathView.swift in Sources */,
 				79B4CCF626D5F1B500D85B48 /* AppIcons.swift in Sources */,
 				79B4CCF826D5F1E400D85B48 /* IconImage.swift in Sources */,
@@ -453,7 +473,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 3.2;
 				DEVELOPMENT_ASSET_PATHS = "\"AppIconMaker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWXN4J2VCP;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -464,7 +484,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolai.iconmaker;
 				PRODUCT_NAME = "App Icon Maker";
 				SWIFT_VERSION = 5.0;
@@ -480,7 +500,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 3.2;
 				DEVELOPMENT_ASSET_PATHS = "\"AppIconMaker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWXN4J2VCP;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -491,7 +511,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolai.iconmaker;
 				PRODUCT_NAME = "App Icon Maker";
 				SWIFT_VERSION = 5.0;

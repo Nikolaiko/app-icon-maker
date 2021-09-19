@@ -1,61 +1,61 @@
 {
   "images" : [
     {
-      "filename" : "Settings (2)-16.jpeg",
+      "filename" : "IconImage-16.0.jpeg",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "16x16"
     },
     {
-      "filename" : "Settings (2)-32.jpeg",
+      "filename" : "IconImage-32.0.jpeg",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "16x16"
     },
     {
-      "filename" : "Settings (2)-33.jpeg",
+      "filename" : "IconImage-32.0.jpeg",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
     },
     {
-      "filename" : "Settings (2)-64.jpeg",
+      "filename" : "IconImage-64.0.jpeg",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "32x32"
     },
     {
-      "filename" : "Settings (2)-128.jpeg",
+      "filename" : "IconImage-128.0.jpeg",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
     },
     {
-      "filename" : "Settings (2)-257.jpeg",
+      "filename" : "IconImage-256.0.jpeg",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
-      "filename" : "Settings (2)-256.jpeg",
+      "filename" : "IconImage-256.0.jpeg",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
     },
     {
-      "filename" : "Settings (2)-513.jpeg",
+      "filename" : "IconImage-512.0.jpeg",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
     },
     {
-      "filename" : "Settings (2)-512.jpeg",
+      "filename" : "IconImage-512.0.jpeg",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
     },
     {
-      "filename" : "Settings (2)-1024.jpeg",
+      "filename" : "IconImage-1024.0.jpeg",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"
