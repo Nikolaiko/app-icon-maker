@@ -473,7 +473,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3.2;
+				CURRENT_PROJECT_VERSION = 4.0;
 				DEVELOPMENT_ASSET_PATHS = "\"AppIconMaker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWXN4J2VCP;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -484,7 +484,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 3.0;
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolai.iconmaker;
 				PRODUCT_NAME = "App Icon Maker";
 				SWIFT_VERSION = 5.0;
@@ -500,7 +500,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3.2;
+				CURRENT_PROJECT_VERSION = 4.0;
 				DEVELOPMENT_ASSET_PATHS = "\"AppIconMaker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWXN4J2VCP;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -511,7 +511,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 3.0;
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolai.iconmaker;
 				PRODUCT_NAME = "App Icon Maker";
 				SWIFT_VERSION = 5.0;

@@ -5,6 +5,8 @@ struct IconImage: Codable {
     let idiom: IconIdiom?
     let scale: IconScale?
     let size: String?
+    let role: String?
+    let subtype: String?
     
     func toCGSize() -> CGSize {
         let intScale = scale?.toInt() ?? 0

@@ -5,6 +5,8 @@ enum IconIdiom: String, Codable {
     case iphone = "iphone"
     case ipad = "ipad"
     case iosMarketing = "ios-marketing"
+    case watch = "watch"
+    case watchMarketing = "watch-marketing"
 }
 
 enum IconScale: String, Codable {
