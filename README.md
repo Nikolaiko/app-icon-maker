@@ -1,2 +1,6 @@
-# app-icon-maker
-Simple App to make app icons from image.
+
+# App icon Helper
+
+Приложение призванное упростить создание иконок для приложений. Можно из картинки просто сделать иконки нужных размеров. А можно сразу импортировать картинку, как иконку в проект.
+
+[App Store](https://apps.apple.com/us/app/app-icon-helper/id1555410586)
